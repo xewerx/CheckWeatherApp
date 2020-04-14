@@ -1,0 +1,77 @@
+.container {
+    background-image: url("mapPoland.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-color: green;
+    width: 40vw;
+    height: 60vh;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 20vh;
+    left: 40vw;
+}
+
+.town {
+    background-color: green;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    padding: 0.4%;
+}
+
+.gdansk {
+    left: 44%;
+    top: 10%;
+}
+
+.szczecin {
+    left: 5%;
+    top: 20%;
+}
+
+.bydgoszcz {
+    left: 36%;
+    top: 25%;
+}
+
+.poznan {
+    left: 25%;
+    top: 38%;
+}
+
+.bialystok {
+    left: 87%;
+    top: 27%;
+}
+
+.warszawa {
+    left: 67%;
+    top: 43%;
+}
+
+.lodz {
+    left: 51%;
+    top: 50%;
+}
+
+.wroclaw {
+    left: 29%;
+    top: 60%;
+}
+
+.lubin {
+    left: 82%;
+    top: 60%;
+}
+
+.katowice {
+    left: 46%;
+    top: 75%;
+}
+
+.krakow {
+    left: 55%;
+    top: 80%;
+}

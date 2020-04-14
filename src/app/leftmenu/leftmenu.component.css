@@ -1,0 +1,21 @@
+.container {
+    width: 20vw;
+    height: 100vh;
+    background-color: darkgreen;
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    margin-top: 100px;
+    background-color: darkkhaki;
+}
+
+.description {
+    margin-top: 5%;
+}
+
+.changeView {
+    background-color: darkmagenta;
+    margin-top: 5%;
+}

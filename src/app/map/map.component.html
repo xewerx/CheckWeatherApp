@@ -1,0 +1,26 @@
+<div class = "container">
+
+    <div *ngIf="viewMap > 0; then isMap; else Welcome"></div>
+
+    <ng-template #isMap>
+        <div class="town gdansk">Gdańsk {{viewMap}}</div>
+        <div class="town szczecin">Szczecin {{viewMap}}</div>
+        <div class="town bydgoszcz">Bydgoszcz {{viewMap}}</div>
+        <div class="town poznan">Poznań {{viewMap}}</div>
+        <div class="town bialystok">Białystok {{viewMap}}</div>
+        <div class="town warszawa">Warszawa {{viewMap}}</div>
+        <div class="town lodz">Łódź {{viewMap}}</div>
+        <div class="town wroclaw">Wrocław {{viewMap}}</div>
+        <div class="town lubin">Lubin {{viewMap}}</div>
+        <div class="town katowice">Katowice {{viewMap}}</div>
+        <div class="town krakow">Kraków {{viewMap}}</div>
+    </ng-template>
+
+    <ng-template #Welcome>
+        {{viewMap}}
+        Witaj na stronie CheckWeather
+        <br>
+        Wybierz parametr, który Cię interesuje w bocznym menu i go sprawdź.
+    </ng-template>
+
+</div>
