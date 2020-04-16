@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { LeftmenuComponent } from './leftmenu/leftmenu.component';
 import { MapComponent } from './map/map.component';
 import { MainServiceService } from './main-service.service';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { MainServiceService } from './main-service.service';
     MapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [MainServiceService],
   bootstrap: [AppComponent]

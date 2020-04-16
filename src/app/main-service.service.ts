@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -8,7 +9,7 @@ import { Observable, Subject } from 'rxjs';
 })
 export class MainServiceService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   view: number;
   private viewObs = new Subject<number>();
@@ -23,7 +24,7 @@ export class MainServiceService {
     return this.viewObs.asObservable();
   }
 
-  getData() {
-
+  getData(url: string): Observable<JSON> {
+    return this.http.get<JSON>(url);
   }
 }
