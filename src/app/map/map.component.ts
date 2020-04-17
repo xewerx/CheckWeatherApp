@@ -32,11 +32,11 @@ export class MapComponent implements OnInit {
     // tslint:disable-next-line: max-line-length
     this.service.getData('https://api.openweathermap.org/data/2.5/weather?q=' + this.towns[i] + '&appid=207cedbdc851a69d4e89de7fbab68010').subscribe(data => {
       this.readyTowns.push({
-        temp: data.main.temp,
-        tempFeel: data.main.feels_like,
-        windSpeed: data.wind.speed,
-        humidity: data.main.humidity,
-        pressure: data.main.pressure
+        temp: Math.round(data.main.temp - 273.15),
+        tempFeel: Math.round(data.main.feels_like - 273.15),
+        windSpeed: Math.round(data.wind.speed),
+        humidity: Math.round(data.main.humidity),
+        pressure: Math.round(data.main.pressure)
       });
       console.log(this.towns[i] );
     });
