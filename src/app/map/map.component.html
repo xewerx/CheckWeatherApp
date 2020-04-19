@@ -2,11 +2,10 @@
 
     <div [ngSwitch]="viewMap">
 
-        <div *ngSwitchCase="0">
-            {{viewMap}}
+        <div *ngSwitchCase="0" class="welcome">
             Witaj na stronie CheckWeather
             <br>
-            Wybierz parametr, który Cię interesuje w bocznym menu i go sprawdź.
+            Wybierz parametr, który Cię interesuje w bocznym menu
         </div>
 
         <div *ngSwitchCase="1">
@@ -14,7 +13,7 @@
             <div class="town szczecin">Szczecin {{readyTowns[1].temp}} ℃</div>
             <div class="town bydgoszcz">Bydgoszcz {{readyTowns[2].temp}} ℃</div>
             <div class="town poznan">Poznań {{readyTowns[3].temp}} ℃</div>
-            <div class="town bialystok">Białystok {{readyTowns[4].temp}} ℃</div>
+            <div class="town bialystok">Białystok&nbsp;{{readyTowns[4].temp}}℃</div>
             <div class="town warszawa">Warszawa {{readyTowns[5].temp}} ℃</div>
             <div class="town lodz">Łódź {{readyTowns[6].temp}} ℃</div>
             <div class="town wroclaw">Wrocław {{readyTowns[7].temp}} ℃</div>
@@ -28,7 +27,7 @@
             <div class="town szczecin">Szczecin {{readyTowns[1].tempFeel}} ℃</div>
             <div class="town bydgoszcz">Bydgoszcz {{readyTowns[2].tempFeel}} ℃</div>
             <div class="town poznan">Poznań {{readyTowns[3].tempFeel}} ℃</div>
-            <div class="town bialystok">Białystok {{readyTowns[4].tempFeel}} ℃</div>
+            <div class="town bialystok">Białystok&nbsp;{{readyTowns[4].tempFeel}}℃</div>
             <div class="town warszawa">Warszawa {{readyTowns[5].tempFeel}} ℃</div>
             <div class="town lodz">Łódź {{readyTowns[6].tempFeel}} ℃</div>
             <div class="town wroclaw">Wrocław {{readyTowns[7].tempFeel}} ℃</div>
@@ -42,7 +41,7 @@
             <div class="town szczecin">Szczecin {{readyTowns[1].windSpeed}} km/h</div>
             <div class="town bydgoszcz">Bydgoszcz {{readyTowns[2].windSpeed}} km/h</div>
             <div class="town poznan">Poznań {{readyTowns[3].windSpeed}} km/h</div>
-            <div class="town bialystok">Białystok {{readyTowns[4].windSpeed}} km/h</div>
+            <div class="town bialystok">Białystok&nbsp;{{readyTowns[4].windSpeed}}km/h</div>
             <div class="town warszawa">Warszawa {{readyTowns[5].windSpeed}} km/h</div>
             <div class="town lodz">Łódź {{readyTowns[6].windSpeed}} km/h</div>
             <div class="town wroclaw">Wrocław {{readyTowns[7].windSpeed}} km/h</div>
@@ -70,7 +69,7 @@
             <div class="town szczecin">Szczecin {{readyTowns[1].pressure}} hPa</div>
             <div class="town bydgoszcz">Bydgoszcz {{readyTowns[2].pressure}} hPa</div>
             <div class="town poznan">Poznań {{readyTowns[3].pressure}} hPa</div>
-            <div class="town bialystok">Białystok {{readyTowns[4].pressure}} hPa</div>
+            <div class="town bialystok">Białystok&nbsp;{{readyTowns[4].pressure}}hPa</div>
             <div class="town warszawa">Warszawa {{readyTowns[5].pressure}} hPa</div>
             <div class="town lodz">Łódź {{readyTowns[6].pressure}} hPa</div>
             <div class="town wroclaw">Wrocław {{readyTowns[7].pressure}} hPa</div>

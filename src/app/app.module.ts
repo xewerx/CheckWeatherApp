@@ -6,12 +6,14 @@ import { LeftmenuComponent } from './leftmenu/leftmenu.component';
 import { MapComponent } from './map/map.component';
 import { MainServiceService } from './main-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LeftmenuComponent,
-    MapComponent
+    MapComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

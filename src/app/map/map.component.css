@@ -3,22 +3,36 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
-    background-color: green;
     width: 40vw;
     height: 60vh;
     margin-right: auto;
     margin-left: auto;
     position: fixed;
-    top: 20vh;
+    top: 15vh;
     left: 40vw;
+    border-radius: 15px;
+    border: 2px solid black;
 }
 
 .town {
-    background-color: green;
+    background-color: rgb(0, 150, 230);
     width: auto;
     text-align: center;
     position: absolute;
     padding: 0.4%;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 3px 7px 4px;
+    animation: appear 1s 0.5s both;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.welcome {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 20%;
+    background-color: rgb(255, 255, 255, 0.7);
+    animation: appear 1s 0.5s both;
 }
 
 .gdansk {
@@ -42,7 +56,7 @@
 }
 
 .bialystok {
-    left: 87%;
+    left: 80%;
     top: 27%;
 }
 
@@ -73,5 +87,10 @@
 
 .krakow {
     left: 55%;
-    top: 80%;
+    top: 83%;
+}
+
+@keyframes appear{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
