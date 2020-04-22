@@ -15,7 +15,7 @@ export class MapComponent implements OnInit {
   private towns: string[] = ['gdansk', 'szczecin', 'bydgoszcz', 'poznan', 'bialystok', 'warszawa', 'lodz', 'wroclaw', 'lubin', 'katowice', 'krakow'];
 
   // array of interfaces<town> with data from API
-  private readyTowns = new Array();
+  private readyTowns = new Array<town>();
 
 
   constructor(private service: MainServiceService) { }
