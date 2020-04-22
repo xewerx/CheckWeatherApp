@@ -14,13 +14,15 @@ export class MapComponent implements OnInit {
   // tslint:disable-next-line: max-line-length
   private towns: string[] = ['gdansk', 'szczecin', 'bydgoszcz', 'poznan', 'bialystok', 'warszawa', 'lodz', 'wroclaw', 'lubin', 'katowice', 'krakow'];
 
-// array of interfaces<town> with data from API
+  // array of interfaces<town> with data from API
   private readyTowns = new Array();
 
 
   constructor(private service: MainServiceService) { }
 
   ngOnInit(): void {
+
+
     this.service.getView().subscribe(view => {
       this.viewMap = view;
     });
@@ -38,15 +40,14 @@ export class MapComponent implements OnInit {
         humidity: Math.round(data.main.humidity),
         pressure: Math.round(data.main.pressure)
       });
-      console.log(this.towns[i] );
+      // console.log(this.towns[i] );
     });
 
-    console.log(this.readyTowns);
+    // console.log(this.readyTowns);
   }
 
 
 }
-
 
 
 

@@ -18,4 +18,13 @@ export class LeftmenuComponent implements OnInit {
     this.service.test();
   }
 
+  hideMenuLeft() {
+    const leftmenu = document.querySelector('.container');
+    leftmenu.classList.toggle('togglerHide');
+    const togglerHamburger = document.querySelector('.hamburger');
+    togglerHamburger.classList.toggle('togglerHamburger');
+    console.log(togglerHamburger);
+  }
+
+
 }

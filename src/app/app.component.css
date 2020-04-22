@@ -1,0 +1,57 @@
+.wrapper {
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+app-map {
+    position: absolute;
+    top: 15vh;
+    left: 35vw;
+}
+
+app-leftmenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1485px){   
+    app-map {       
+        left: 25vw;
+        z-index: 2;
+    }  
+
+    app-leftmenu {
+        z-index: 5;
+    }
+}
+
+@media (max-width: 1160px){   
+    app-map {       
+        left: 10vw;
+        
+    }  
+}
+
+@media (max-width: 1020px){   
+    app-map {       
+        left: 5vw;
+        
+    }  
+}
+
+@media (max-width: 700px){   
+    app-map {       
+        left: 0.5vw;
+        
+    }  
+}

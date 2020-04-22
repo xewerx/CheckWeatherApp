@@ -1,11 +1,17 @@
-<div class="container">
+<div class="container ">
+    <br>
+    <div (click)="hideMenuLeft()" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <br><br><br>
     <div class="container2">
         <div class="name">CheckWeather</div>
         <div class="description">Sprawdź warunki pogodowe w swoim mieście!</div>
     </div>
-    
+
     <div (click)="changeView(1)" class="changeView">Temperatura</div>
     <div (click)="changeView(2)" class="changeView">Temperatura odczuwalna</div>
     <div (click)="changeView(3)" class="changeView">Prędkość wiatru</div>

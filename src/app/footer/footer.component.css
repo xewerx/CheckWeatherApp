@@ -6,3 +6,9 @@
     margin: 0;
     padding: 0%;
 }
+
+@media (max-width: 450px){
+    .container {
+        font-size: 10px;
+    }
+}
