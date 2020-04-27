@@ -23,7 +23,7 @@ export class LeftmenuComponent implements OnInit {
     leftmenu.classList.toggle('togglerHide');
     const togglerHamburger = document.querySelector('.hamburger');
     togglerHamburger.classList.toggle('togglerHamburger');
-    console.log(togglerHamburger);
+    // console.log(togglerHamburger);
   }
 
 
