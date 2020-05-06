@@ -20,7 +20,7 @@ export class MapComponent implements OnInit {
   readonly apiKey: string;
 
   constructor(private service: MainServiceService) {
-    this.apiKey = '207cedbdc851a69d4e89de7fbab68010';
+    this.apiKey = ':)';
   }
 
   ngOnInit(): void {
